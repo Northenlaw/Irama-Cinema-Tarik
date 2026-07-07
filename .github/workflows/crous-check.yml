@@ -2,9 +2,9 @@ name: Vérification logement CROUS
 
 on:
   schedule:
-    # Toutes les 10 minutes (le "cron" de GitHub peut avoir quelques minutes
+    # Toutes les 5 minutes (le "cron" de GitHub peut avoir quelques minutes
     # de retard en cas de forte charge sur leurs serveurs, c'est normal)
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: # permet aussi de le lancer manuellement depuis GitHub
 
 # Nécessaire pour que le job puisse "committer" le fichier de suivi
